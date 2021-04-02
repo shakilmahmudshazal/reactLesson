@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
+import TableComponent from './components/table'
+
 function App() {
+
+  var name = "Shakil";
+  var title = "Shakil is here";
+
+  var Link = {
+    text: "Click Here",
+    url:"https://google.com"
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App' >
+    <h1>{name}</h1>
+    <p>{title}</p>
+
+    <a href={Link.url} target="_blank">{Link.text}</a>
+
+    <TableComponent/>
+  
     </div>
   );
 }
