@@ -1,9 +1,10 @@
 import React from 'react'
 
 
-function Table() {
+function Table({children}) {
     return (
         <div>
+            <h1>children : {children}</h1>
             <table border="1">
                 <tr>
                     <td>shakil</td>
